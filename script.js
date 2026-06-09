@@ -19,7 +19,7 @@ const carsData = [
         transmission: 'Automatico',
         power: '340 CV',
         description: 'El Toyota GR Supra es un icono renacido. Con motor BMW B58 3.0L de 6 cilindros en linea, ofrece una experiencia de conduccion pura y emocionante. Diseño aerodinamico y prestaciones de superdeportivo.',
-        image: 'https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=800&q=80',
+        image: 'https://imgs.search.brave.com/ZuxvrTnQUr_o5FDMbBiiCNJfrxdmpEhNdOXgG1065wI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/Lzc4LzIwMjZfVG95/b3RhX0dSX1N1cHJh/X0ZpbmFsX0VkaXRp/b24sX2Zyb250X05Z/SUFTXzIwMjUuanBn',
         badge: 'Destacado'
     },
     {
@@ -33,7 +33,7 @@ const carsData = [
         transmission: 'Automatico',
         power: '600 CV',
         description: 'El Nissan GT-R Nismo representa la cuspide de la ingenieria japonesa. Motor V6 biturbo de 3.8L, traccion integral ATTESA E-TS y una aerodinamica refinada en el tunel de viento.',
-        image: 'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=800&q=80',
+        image: 'https://imgs.search.brave.com/qrE4tN_AGQ2NRHZkTE9FCyUSv9M7kLloito4XdfG-R0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL210Zy1wcm9k/LzY1YTFjYjAyYjk5/MWMzMDAwODYzYWM4/OC8yMDI0LXIzNS1n/dHItbmlzbW8tY2Fy/Ym9uLWJ1bXBlci5q/cGc_dz0xMDA',
         badge: 'Nismo'
     },
     {
@@ -47,7 +47,7 @@ const carsData = [
         transmission: 'Manual',
         power: '184 CV',
         description: 'El Mazda MX-5 RF es el roadster mas vendido de la historia. Con su techo rigido retractil, equilibrio perfecto 50:50 y motor Skyactiv-G de 2.0L, define la diversion al volante.',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        image: 'https://imgs.search.brave.com/9TaHGtGNNPVZc7UR2LJzAZE8WdZMXMofj1euA126XkA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5kcml2ZS5jb20u/YXUvb2JqL3R4X3E6/NzAscnM6YXV0bzo0/NDg6MjUyOjEvY2Fy/YWR2aWNlL3ByaXZh/dGUvY2RlMWFiNzY0/ZmQwMzE1MzI2MWI3/YTY5ZTkwYTA5Yzk',
         badge: null
     },
     {
@@ -61,7 +61,7 @@ const carsData = [
         transmission: 'Manual',
         power: '329 CV',
         description: 'El Honda Civic Type R es el hot hatch definitivo. Motor VTEC Turbo de 2.0L, suspension adaptativa y el mejor tiempo en Nurburgring de su categoria. Disenado para puristas.',
-        image: 'https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?w=800&q=80',
+        image: 'https://imgs.search.brave.com/9o84E-OLINZtCotsGFlKMrSVCsg2R1SmYjoup2WHBwU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWct/aWsuY2Fycy5jby56/YS9zcGVjaW1hZ2Vz/L2hvbmRjaXZpNmgx/XzEuanBnP3RyPWgt/MzI0LHctNjQ4LHEt/ODA',
         badge: 'Type R'
     },
     {
@@ -89,7 +89,7 @@ const carsData = [
         transmission: 'Automatico',
         power: '477 CV',
         description: 'El Lexus RC F combina lujo y potencia con un V8 atmosferico de 5.0L que entrega 477 CV. Artesania japonesa en cada detalle con acabidos en alcantara y carbono.',
-        image: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80',
+        image: 'https://imgs.search.brave.com/SrDD0vyKljdXF1kFi4NzgqCvT1BpdyxrE24QMhFxqvk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b2NlbnRydW0u/cGwvTWpBeU15NXFZ/Z3NnR3p0S0dncHZI/Mk5EYjFaVUVtQU1L/QlVvVmxZUVAwYzNI/RDhLWEI0alJYZE5m/QnNIUlNoWUlrNTVH/QVpJZWxvblNYNFlC/eEI0V0c0VktBRkFB/bUFZSWxRdUZrQUJL/RWNuVkNzWVZoUWhB/eWNOSkJkU1hIOWFj/MHBqRTBVV2J4Yw',
         badge: 'V8'
     },
     {
@@ -103,7 +103,7 @@ const carsData = [
         transmission: 'Manual',
         power: '234 CV',
         description: 'El Toyota GR86 es la evolucion del deportivo accesible. Motor boxer de 2.4L, traccion trasera y un chasis perfeccionado en los circuitos mas exigentes del mundo.',
-        image: 'https://images.unsplash.com/photo-1554744512-d6c603f27c54?w=800&q=80',
+        image: 'https://imgs.search.brave.com/aHt_wfZuk7nbyR3zH7IDgRPZGDTe_piNnQwzxJHjaNo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/dG9wZ2Vhci5jb20v/c2l0ZXMvZGVmYXVs/dC9maWxlcy8yMDIy/LzEwLzE3JTIwVG95/b3RhJTIwR1I4Ni5q/cGc',
         badge: 'Nuevo'
     },
     {
@@ -117,7 +117,7 @@ const carsData = [
         transmission: 'Manual',
         power: '328 CV',
         description: 'El Nissan 370Z es un clasico moderno. V6 VQ37VHR de 3.7L, diseno atemporal y una conduccion visceral que conecta al piloto con la carretera de forma autentica.',
-        image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80',
+        image: 'https://imgs.search.brave.com/D6GZycIqHa2-iyDhKYZmZZFoWsoU8MxFr7ZaFJPm8wQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZGlhcmlvbW90b3Iu/Y29tL2ltYWdlbmVz/LzIwMTkvMDQvbmlz/c2FuLTM3MHotYW5p/dmVyc2FyaW8tZG0t/MS5qcGc_Y2xhc3M9/TQ',
         badge: null
     },
     {
@@ -131,7 +131,7 @@ const carsData = [
         transmission: 'Automatico',
         power: '581 CV',
         description: 'El Honda NSX es un superdeportivo hibrido que combina un V6 biturbo con tres motores electricos. Tecnologia derivada de la Formula 1 en un coche de calle homologado.',
-        image: 'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&q=80',
+        image: 'https://imgs.search.brave.com/CBwcd5PIJdD5U5pf3Nq9IWu9sLAtd4Ivy8Dw2NVW6Bo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5kcml2ZS5jb20u/YXUvb2JqL3R4X3E6/NzAscnM6YXV0bzo0/NDg6MjUyOjEvY2Fy/YWR2aWNlL3ByaXZh/dGUvbGV4d2EzYnlp/b3Jyb2d2M21obHM',
         badge: 'Hibrido'
     },
     {
@@ -145,7 +145,7 @@ const carsData = [
         transmission: 'Manual',
         power: '280 CV',
         description: 'El Mazda RX-7 Spirit R es la ultima y mas exclusiva evolucion del FD. Motor rotativo 13B-REW, edicion limitada de solo 1.500 unidades y un legado unico en la historia del motor Wankel.',
-        image: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80',
+        image: 'https://imgs.search.brave.com/y23EOLdSpQFa_4v7lv-kSDxTcxgL8iBtvOER0vTAc2s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9qZG0t/ZXhwby5jb20vNDQ3/NzEtdGhpY2tib3hf/ZGVmYXVsdC9tYXpk/YS1yeC03LXNwaXJp/dC1yLXNhbGUuanBn',
         badge: 'Clasico'
     },
     {
@@ -159,7 +159,7 @@ const carsData = [
         transmission: 'Manual',
         power: '310 CV',
         description: 'El Subaru WRX STI es un icono del rally adaptado a la carretera. Motor boxer EJ25 turbo, traccion integral Symmetrical AWD y diferencial central DCCD para maximo control.',
-        image: 'https://images.unsplash.com/photo-1626668893632-6f3d4466d22f?w=800&q=80',
+        image: 'https://imgs.search.brave.com/5xSE5KxJ-NWM5VeG83hLZnmJEW9yFOUFxJ91JU0gNeo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5ldm8uY28udWsv/aW1hZ2UvcHJpdmF0/ZS9zLS1WV3BxWFVx/SC0tL2ZfYXV0byx0/X2NhcmQtbW9iaWxl/QDEvdjE1NTYyMTg2/MjIvZXZvLzIwMTcv/MTEvaW1fNDEyMi5q/cGc',
         badge: 'STI'
     },
     {
@@ -173,7 +173,7 @@ const carsData = [
         transmission: 'Automatico',
         power: '464 CV',
         description: 'El Lexus LC 500 es la expresion maxima del lujo deportivo japones. V8 atmosferico de 5.0L con una banda sonora inolvidable y un diseno que desafio todos los limites.',
-        image: 'https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=800&q=80',
+        image: 'https://imgs.search.brave.com/NSS3Zp-V2iW8ApC0utzGopzVsKuKzWm8vVm3Pfojji0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLnRvcHNwZWVk/aW1hZ2VzLmNvbS93/b3JkcHJlc3Mvd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDcv/MjAyMy1sZXh1cy1s/Yy0wMTYuanBnP3E9/NDkmZml0PWNyb3Am/dz0yMjAmaD0xMjQm/ZHByPTI',
         badge: null
     }
 ];
