@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Motors | Concesionario de Coches Japoneses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2"/>
+                        <path d="M10 20C10 14.477 14.477 10 20 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                        <path d="M28 20H32M26 14L29 11M26 26L29 29" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">SAKURA<span>MOTORS</span></span>
+                </a>
+                <nav class="nav" id="nav">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#catalogo" class="nav-link">Catalogo</a>
+                    <a href="#nosotros" class="nav-link">Nosotros</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+                <div class="header-actions">
+                    <div id="userSection">
+                        <button class="btn btn-outline" id="loginBtn" onclick="openAuthModal()">Iniciar Sesion</button>
+                    </div>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0e3c?w=1920&q=80" alt="Coche japones deportivo">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Concesionario Especializado</p>
+                <h1 class="hero-title">Coches Japoneses<br><span class="accent">de Ensueno</span></h1>
+                <p class="hero-desc">Descubre nuestra seleccion de los mejores vehiculos japoneses. Desde iconos deportivos hasta berlinas de lujo, todos revisados y listos para conducir.</p>
+                <div class="hero-actions">
+                    <a href="#catalogo" class="btn btn-primary">Ver Catalogo</a>
+                    <a href="#nosotros" class="btn btn-outline-light">Conocenos</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Desplaza</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Vehiculos Disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Marcas Premium</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">Anos de Experiencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2.000+</span>
+                    <span class="stat-label">Clientes Satisfechos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog" id="catalogo">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Nuestra Seleccion</p>
+                <h2 class="section-title">Vehiculos Destacados</h2>
+                <p class="section-desc">Cada vehiculo ha sido seleccionado y revisado por nuestros especialistas para garantizar la maxima calidad.</p>
+            </div>
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="Toyota">Toyota</button>
+                <button class="filter-btn" data-filter="Honda">Honda</button>
+                <button class="filter-btn" data-filter="Nissan">Nissan</button>
+                <button class="filter-btn" data-filter="Mazda">Mazda</button>
+                <button class="filter-btn" data-filter="Subaru">Subaru</button>
+                <button class="filter-btn" data-filter="Lexus">Lexus</button>
+            </div>
+            <div class="cars-grid" id="carsGrid"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="section-subtitle">Sobre Nosotros</p>
+                    <h2 class="section-title">Pasion por la<br><span class="accent">Ingenieria Japonesa</span></h2>
+                    <p>En Sakura Motors llevamos mas de 15 anos seleccionando los mejores vehiculos japoneses para nuestros clientes. Nuestro equipo de expertos revisa cada coche meticulosamente.</p>
+                    <p>Trabajamos directamente con proveedores de confianza en Japon para ofrecerte vehiculos unicos con historial completo y garantia de calidad.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Revision completa de 150 puntos</span>
+                        </div>
+                        <div class="about-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Garantia de 12 meses incluida</span>
+                        </div>
+                        <div class="about-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Financiacion a tu medida</span>
+                        </div>
+                        <div class="about-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Entrega a toda Espana</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80" alt="Taller de coches japoneses">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Contacto</p>
+                <h2 class="section-title">Visitanos o Escribenos</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <div>
+                            <h4>Ubicacion</h4>
+                            <p>Calle Sakura 47, Madrid, 28001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <div>
+                            <h4>Telefono</h4>
+                            <p>+34 912 345 678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@sakuramotors.es</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun - Vie: 9:00 - 20:00<br>Sab: 10:00 - 14:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.627340680846!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287d5d8365b1%3A0x552a12035a17c0e5!2sMadrid!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 12px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 20C10 14.477 14.477 10 20 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                            <path d="M28 20H32M26 14L29 11M26 26L29 29" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="logo-text">SAKURA<span>MOTORS</span></span>
+                    </a>
+                    <p>Especialistas en vehiculos japoneses de alta gama. Calidad, confianza y pasion por la ingenieria nipona.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#catalogo">Catalogo</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Marcas</h4>
+                    <a href="#catalogo" onclick="filterCars('Toyota')">Toyota</a>
+                    <a href="#catalogo" onclick="filterCars('Honda')">Honda</a>
+                    <a href="#catalogo" onclick="filterCars('Nissan')">Nissan</a>
+                    <a href="#catalogo" onclick="filterCars('Lexus')">Lexus</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Aviso Legal</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sakura Motors. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-backdrop" onclick="closeAuthModal()"></div>
+        <div class="modal-content modal-auth">
+            <button class="modal-close" onclick="closeAuthModal()" aria-label="Cerrar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="loginTab" onclick="switchAuthTab('login')">Iniciar Sesion</button>
+                <button class="auth-tab" id="registerTab" onclick="switchAuthTab('register')">Registrarse</button>
+            </div>
+            <div class="auth-panel active" id="loginPanel">
+                <h3>Bienvenido de nuevo</h3>
+                <p>Accede a tu cuenta para gestionar tus favoritos y consultas.</p>
+                <form id="loginForm" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Contrasena</label>
+                        <input type="password" id="loginPassword" required placeholder="Tu contrasena">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Iniciar Sesion</button>
+                </form>
+            </div>
+            <div class="auth-panel" id="registerPanel">
+                <h3>Crear cuenta</h3>
+                <p>Registrate para acceder a todas las funcionalidades.</p>
+                <form id="registerForm" onsubmit="handleRegister(event)">
+                    <div class="form-group">
+                        <label for="regName">Nombre completo</label>
+                        <input type="text" id="regName" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="regEmail">Email</label>
+                        <input type="email" id="regEmail" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="regPassword">Contrasena</label>
+                        <input type="password" id="regPassword" required placeholder="Minimo 6 caracteres" minlength="6">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Car Detail Modal -->
+    <div class="modal" id="carModal">
+        <div class="modal-backdrop" onclick="closeCarModal()"></div>
+        <div class="modal-content modal-car">
+            <button class="modal-close" onclick="closeCarModal()" aria-label="Cerrar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <div class="car-detail" id="carDetail"></div>
+        </div>
+    </div>
+
+    <!-- Chat Modal -->
+    <div class="modal" id="chatModal">
+        <div class="modal-backdrop" onclick="closeChatModal()"></div>
+        <div class="modal-content modal-chat">
+            <div class="chat-header">
+                <div class="chat-seller">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Kenji Tanaka" class="chat-avatar">
+                    <div class="chat-seller-info">
+                        <h4>Kenji Tanaka</h4>
+                        <span class="chat-status">
+                            <span class="status-dot"></span>
+                            En linea
+                        </span>
+                    </div>
+                </div>
+                <button class="modal-close" onclick="closeChatModal()" aria-label="Cerrar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="chat-subject" id="chatSubject"></div>
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-input-area">
+                <div class="quick-replies" id="quickReplies"></div>
+                <form class="chat-form" onsubmit="sendMessage(event)">
+                    <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." autocomplete="off">
+                    <button type="submit" class="chat-send" aria-label="Enviar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
