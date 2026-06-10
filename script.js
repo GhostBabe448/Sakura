@@ -1,11 +1,3 @@
-/**
- * SAKURA MOTORS - JavaScript
- * Funcionalidad completa: coches, auth, chat, filtros
- */
-
-// ==========================================
-// DATOS DE COCHES
-// ==========================================
 
 const carsData = [
     {
@@ -178,18 +170,18 @@ const carsData = [
     }
 ];
 
-// ==========================================
+
 // ESTADO GLOBAL
-// ==========================================
+
 
 let currentFilter = 'todos';
 let currentCar = null;
 let currentUser = null;
 let chatHistory = [];
 
-// ==========================================
+
 // UTILIDADES
-// ==========================================
+
 
 function formatPrice(price) {
     return new Intl.NumberFormat('es-ES').format(price);
@@ -212,9 +204,8 @@ function getCurrentTime() {
     return new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
 }
 
-// ==========================================
+
 // RENDERIZAR COCHES
-// ==========================================
 
 function getSpecIcons() {
     return {
@@ -290,9 +281,9 @@ function renderCars() {
     `).join('');
 }
 
-// ==========================================
+
 // FILTROS
-// ==========================================
+
 
 function setupFilters() {
     const buttons = document.querySelectorAll('.filter-btn');
@@ -316,9 +307,9 @@ function filterCars(brand) {
     document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
 }
 
-// ==========================================
+
 // CAR MODAL
-// ==========================================
+
 
 function openCarModal(carId) {
     const car = carsData.find(c => c.id === carId);
@@ -389,9 +380,9 @@ function closeCarModal() {
     document.body.style.overflow = '';
 }
 
-// ==========================================
+
 // AUTH (localStorage)
-// ==========================================
+
 
 function initAuth() {
     const stored = localStorage.getItem('sakura_user');
@@ -488,9 +479,9 @@ function handleLogout() {
     showToast('Sesion cerrada correctamente');
 }
 
-// ==========================================
+
 // CHAT
-// ==========================================
+
 
 function openChatModal(carId) {
     const car = carsData.find(c => c.id === carId);
@@ -624,9 +615,9 @@ El proceso es muy sencillo. ¿Prefieres hacerlo aqui por el chat o que te llamem
     return defaults[Math.floor(Math.random() * defaults.length)];
 }
 
-// ==========================================
+
 // HEADER SCROLL
-// ==========================================
+
 
 function setupHeaderScroll() {
     const header = document.getElementById('header');
@@ -643,9 +634,9 @@ function setupHeaderScroll() {
     });
 }
 
-// ==========================================
+
 // MOBILE MENU
-// ==========================================
+
 
 function setupMobileMenu() {
     const toggle = document.getElementById('menuToggle');
@@ -665,9 +656,9 @@ function setupMobileMenu() {
     });
 }
 
-// ==========================================
+
 // MODAL CERRAR CON ESC
-// ==========================================
+
 
 function setupModalKeyboard() {
     document.addEventListener('keydown', (e) => {
@@ -679,9 +670,9 @@ function setupModalKeyboard() {
     });
 }
 
-// ==========================================
+
 // ANIMACIONES AL SCROLL
-// ==========================================
+
 
 function setupScrollAnimations() {
     const observerOptions = {
@@ -708,9 +699,9 @@ function setupScrollAnimations() {
     });
 }
 
-// ==========================================
+
 // INICIALIZACION
-// ==========================================
+
 
 document.addEventListener('DOMContentLoaded', () => {
     renderCars();
