@@ -564,24 +564,24 @@ function getAutoResponse(text, car) {
     const price = formatPrice(car.price);
 
     if (lower.includes('precio') || lower.includes('precio')) {
-        return `El ${car.brand} ${car.model} tiene un precio de **${price} €**. Incluye garantia de 12 meses y revision completa. ¿Te gustaria conocer opciones de financiacion?`;
+        return `El ${car.brand} ${car.model} tiene un precio de ${price} €. Incluye garantia de 12 meses y revision completa. ¿Te gustaria conocer opciones de financiacion?`;
     }
 
     if (lower.includes('financ') || lower.includes('cuota') || lower.includes('pagar')) {
         const cuota = Math.round(car.price / 60);
-        return `Ofrecemos financiacion hasta en 60 meses sin entrada. Podrias tener cuotas desde **${formatPrice(cuota)} €/mes**. Tambien tenemos opciones de leasing. ¿Te preparo una simulacion personalizada?`;
+        return `Ofrecemos financiacion hasta en 60 meses sin entrada. Podrias tener cuotas desde ${formatPrice(cuota)} €/mes. Tambien tenemos opciones de leasing. ¿Te preparo una simulacion personalizada?`;
     }
 
     if (lower.includes('garantia') || lower.includes('garantia')) {
-        return `Todos nuestros vehiculos incluyen garantia de **12 meses** con cobertura total de motor, transmision y sistemas electricos. Puedes ampliarla hasta 24 meses por 890 € adicionales.`;
+        return `Todos nuestros vehiculos incluyen garantia de 12 meses con cobertura total de motor, transmision y sistemas electricos. Puedes ampliarla hasta 24 meses por 890 € adicionales.`;
     }
 
     if (lower.includes('entrega') || lower.includes('envio') || lower.includes('lleva')) {
-        return `Realizamos entregas en toda Espana peninsular. El plazo es de 3 a 5 dias habiles y tiene un coste de 290 €. Si prefieres, puedes recogerlo en nuestras instalaciones de Madrid sin coste adicional.`;
+        return `Realizamos entregas en toda España peninsular. El plazo es de 3 a 5 dias habiles y tiene un coste de 290 €. Si prefieres, puedes recogerlo en nuestras instalaciones de Madrid sin coste adicional.`;
     }
 
     if (lower.includes('reserv') || lower.includes('aparta')) {
-        return `Puedes reservar el vehiculo con un deposito de **2.000 €**. El coche se retirara del mercado por 7 dias, tiempo en el que puedes financiar o preparar la compra. ¿Quieres que te envie los datos para la reserva?`;
+        return `Puedes reservar el vehiculo con un deposito de 2.000 €. El coche se retirara del mercado por 7 dias, tiempo en el que puedes financiar o preparar la compra. ¿Quieres que te envie los datos para la reserva?`;
     }
 
     if (lower.includes('compra') || lower.includes('comprar') || lower.includes('lo quiero')) {
