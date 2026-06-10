@@ -1,7 +1,4 @@
-/* ==========================================
-   SAKURA MOTORS - Stylesheet
-   Coches Japoneses Premium
-   ========================================== */
+
 
 /* CSS Custom Properties */
 :root {
@@ -92,7 +89,7 @@ input, textarea {
 }
 
 /* ==========================================
-   BUTTONS
+   Botones
    ========================================== */
 
 .btn {
@@ -155,7 +152,7 @@ input, textarea {
 }
 
 /* ==========================================
-   HEADER
+   Encabezado
    ========================================== */
 
 .header {
@@ -273,7 +270,7 @@ input, textarea {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* User Section */
+/* Seccion de usuario */
 .user-logged {
     display: flex;
     align-items: center;
@@ -437,7 +434,7 @@ input, textarea {
 }
 
 /* ==========================================
-   SECTIONS COMMON
+   Secciones Comunes
    ========================================== */
 
 .section-header {
@@ -475,7 +472,7 @@ input, textarea {
 }
 
 /* ==========================================
-   CATALOG
+   CATALOGO
    ========================================== */
 
 .catalog {
